@@ -14,3 +14,14 @@ export const addSkill = (student: StudentType, skill: string) => {
         title: skill
     })
 }
+
+export function addSkill2(student: StudentType, skill: string) {
+    student.technologies.push({
+        id: new Date().getTime(),
+        title: skill
+    })
+}
+
+export function makeStudentActive(student: StudentType) {
+    student.isActive = true;
+}
