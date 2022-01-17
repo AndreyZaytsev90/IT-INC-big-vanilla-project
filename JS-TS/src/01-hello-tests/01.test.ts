@@ -1,12 +1,21 @@
 import {mult, splitIntoWords, sum} from "./01";
 
+//daTA
+let a: number
+let b: number
+let c: number
+
+beforeEach(() => {
+    a = 1
+    b = 2
+    c = 3
+})
 
 test("sum should be correct", () => {
-    const a = 1
-    const b = 2
-    const c = 3
+
 //action
     const result1 = sum(a, b)
+    a = 100
     const result2 = sum(b, c)
 
     //expert result
@@ -16,9 +25,7 @@ test("sum should be correct", () => {
 
 
 test("multiply should be correct", () => {
-    const a = 1
-    const b = 2
-    const c = 3
+
 //action
     const result1 = mult(a, b)
     const result2 = mult(b, c)
@@ -43,10 +50,10 @@ test("splitting into words should be correct",() => {
 
 
     expect(result2.length).toBe(5)
-    expect(result1[0]).toBe("js")
-    expect(result1[1]).toBe("the")
-    expect(result1[2]).toBe("best")
-    expect(result1[3]).toBe("programming")
-    expect(result1[4]).toBe("language")
+    expect(result2[0]).toBe("js")
+    expect(result2[1]).toBe("the")
+    expect(result2[2]).toBe("best")
+    expect(result2[3]).toBe("programming")
+    expect(result2[4]).toBe("language")
 })
 

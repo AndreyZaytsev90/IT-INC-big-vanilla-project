@@ -10,6 +10,7 @@ type TechType = {
     id: number
     title: string
 }
+
 export type StudentType = {
     id: number
     name: string
@@ -34,18 +35,9 @@ export const student: StudentType = {
         }
     },
     technologies: [
-        {
-            id: 1,
-            title: "HTML/CSS"
-        },
-        {
-            id: 2,
-            title: "JavaScript"
-        },
-        {
-            id: 3,
-            title: "React"
-        }
+        {id: 1, title: "HTML/CSS"},
+        {id: 2, title: "JavaScript"},
+        {id: 3, title: "React"}
     ]
 }
 

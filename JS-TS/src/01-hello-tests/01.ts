@@ -5,6 +5,10 @@ export const mult = (a: number, b: number) => a * b;
 export function splitIntoWords(sentense: string) {
     const words = sentense.toLowerCase().split(" ")
 
-    return words.filter(word => word !== "")
-        .map(word => word.replace("!", ""))
+    return words.filter(word =>
+        word !== "" && word !== "-")
+        .map(word => word
+            .replace("!", "")
+            .replace(".", "")
+            .replace(",", ""))
 }
