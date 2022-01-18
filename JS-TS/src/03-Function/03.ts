@@ -1,5 +1,5 @@
-import {student, StudentType} from "../02-Objects/02";
-import {GovernmentBuildingsType} from "../02-Objects/02_02";
+import {StudentType} from "../02-Objects/02";
+import {CityType, GovernmentBuildingsType, HouseType} from "../02-Objects/02_02";
 
 debugger
 export const sum = (a: number, b: number) => {
@@ -33,4 +33,21 @@ export const doesStudentLiveIn = (student: StudentType, cityName: string) => {
 
 export const addMoneyToBudget = (governmentBuildings: GovernmentBuildingsType, budget: number) => {
     governmentBuildings.budget += budget
+}
+
+export const repairHouses = (houseType: HouseType) => {
+    houseType.repaired = true
+}
+
+export const toFireStaff = (governmentBuilding: GovernmentBuildingsType, staffCount: number) => {
+    governmentBuilding.staffCount -= staffCount
+}
+export const toHireStaff = (governmentBuilding: GovernmentBuildingsType, staffCount: number) => {
+    governmentBuilding.staffCount += staffCount
+}
+
+export const createMessage = (props: CityType) => {
+    //return "Hello " + props.title + ". I want to be happy all " + props.citizensNumber + " men!"
+    return `Hello ${props.title}. I want to be happy all ${props.citizensNumber} men!`
+
 }
