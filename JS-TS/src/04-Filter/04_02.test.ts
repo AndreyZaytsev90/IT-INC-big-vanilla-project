@@ -1,6 +1,6 @@
 import {CityType} from "../02-Objects/02_02";
 
-import {demolishHousesOnTheStreet} from "./04_2";
+import {demolishHousesOnTheStreet, getBuildingsWithCorrentStaffCountThen} from "./04_2";
 import {addMoneyToBudget, createMessage, repairHouses, toFireStaff, toHireStaff} from "../03-Function/03";
 
 
@@ -50,6 +50,13 @@ test("houses should be destroyed", () => {
     expect(city.houses[1].id).toBe(2)
 })
 
+test("buildings with corrent staff count", () => {
+    let buildings = getBuildingsWithCorrentStaffCountThen(city.governmentBuildings, 500)
+
+    expect(buildings.length).toBe(1)
+    expect(buildings[0].type).toBe("FIRE-STATION")
+
+})
 
 
 
