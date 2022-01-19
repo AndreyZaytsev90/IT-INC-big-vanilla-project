@@ -8,7 +8,7 @@ export type AddressType = {
 }
 
 export type HouseType = {
-    //length: number
+    id?: number
     buildedAt: number
     repaired: boolean
     address: AddressType
