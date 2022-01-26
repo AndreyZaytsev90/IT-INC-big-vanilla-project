@@ -13,7 +13,7 @@ export const User = () => {
 
 
     return <div>Andrey
-        <button onClick={deleteUser}>delete</button>
+        <div onClick={deleteUser}>delete</div>
         <button onClick={saveUser}>save</button>
     </div>
 
