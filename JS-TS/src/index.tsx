@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {sum} from "./03-Function/03";
+import {User} from "./05-Map/06-Callbacks";
 
 const a = sum
 
 ReactDOM.render(
     <React.StrictMode>
-        <App/>
+        <User/>
     </React.StrictMode>,
     document.getElementById('root')
 );
