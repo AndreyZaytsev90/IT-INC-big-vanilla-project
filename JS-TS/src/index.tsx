@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {sum} from "./03-Function/03";
-import {User} from "./05-Map/06-Callbacks";
+import {User} from "./06-Callbacks/06-Callbacks";
 
 const a = sum
 
