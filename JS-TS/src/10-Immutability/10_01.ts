@@ -131,8 +131,3 @@ export const updateCompany = (companies: { [key: string]: Array<CompaniesType> }
 
 
 
-
-
-
-
-
