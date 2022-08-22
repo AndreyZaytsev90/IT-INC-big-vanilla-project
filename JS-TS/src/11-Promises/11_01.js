@@ -20,7 +20,14 @@ obg1.say("Hello")*/
 
 //pending
 const promise2 = findUserInDB(1)
-promise2.then((user) => {
+promise2
+  .then((user) => { // мы надеемся, что then произойдет и придут ДАННЫЕ с сервера (resolved)
     console.log(user)
-})
+  })
+  .catch((error) => { // иначе catch ловит ошибку (rejected)
+    console.warn(error)
+  })
+  .finally(() => {
+    console.log("finish")
+  })
 console.log("finish")

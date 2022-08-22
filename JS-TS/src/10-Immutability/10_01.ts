@@ -120,14 +120,4 @@ export const updateCompany = (companies: { [key: string]: Array<CompaniesType> }
     companyCopy[userName] = companyCopy[userName].map(c => c.id === companyId ? {...c, title: newTitle} : c)
 
     return companyCopy
-
 }
-
-
-
-
-
-
-
-
-
