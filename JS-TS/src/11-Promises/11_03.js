@@ -33,8 +33,8 @@ const settings = {
 .then(data => console.log(data))*/
 
 const makeITKamasutraReqest = () => {
-  const promise = axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
-  return promise
+  // eslint-disable-next-line no-undef
+  return axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
 }
 
 makeITKamasutraReqest().then((res) => console.log(res.data))
