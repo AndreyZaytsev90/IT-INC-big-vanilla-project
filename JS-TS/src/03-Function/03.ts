@@ -1,7 +1,6 @@
 import {StudentType} from "../02-Objects/02";
 import {CityType, GovernmentBuildingsType, HouseType} from "../02-Objects/02_02";
 
-debugger
 export const sum = (a: number, b: number) => {
     return a + b
 }

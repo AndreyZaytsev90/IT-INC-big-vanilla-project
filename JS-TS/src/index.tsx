@@ -1,16 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {sum} from "./03-Function/03";
-import {User} from "./06-Callbacks/06-Callbacks";
 
-const a = sum
+import reportWebVitals from './reportWebVitals';
+
+import {User} from "./06-Callbacks/06-Callbacks";
+import {splitIntoWords} from "./2023/01-hello-tests-2023/01";
+import App from "./App";
+import {addSkills, sum} from "./2023/03-Function-2023/2023.03";
+import {student} from "./2023/02-Object-2023/2023.02";
+import {render} from "@testing-library/react";
+
+
+
+/*const sentence = "Hello world!"
+const result = splitIntoWords(sentence)
+console.log(result)
+
+console.log(result[0] === 'Hello')
+
+const result2 = sum(242,4353)
+console.log(result2)*/
+
+const a = sum(2,3)
+
+const s = student.technologies.map(skill =>
+    <div>{skill.id}  -  {skill.title}</div>
+)
+
+
 
 ReactDOM.render(
     <React.StrictMode>
-        <User/>
+        <App/>
+        {s}
     </React.StrictMode>,
     document.getElementById('root')
 );

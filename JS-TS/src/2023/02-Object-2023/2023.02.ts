@@ -14,7 +14,7 @@ type InfoType = {
     busy: boolean
 }
 
-type StudentType = {
+export type StudentType = {
     name: string,
     age: number,
     isActive: boolean,
@@ -39,7 +39,7 @@ type TechnologiesType = {
 }
 
 
-const student: StudentType = {
+export const student: StudentType = {
     "name": "Andrey",
     "age": 32,
     "isActive": false,
