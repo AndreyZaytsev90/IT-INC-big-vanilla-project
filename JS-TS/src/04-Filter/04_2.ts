@@ -7,3 +7,8 @@ export const demolishHousesOnTheStreet = (city: CityType, title: string) => {
 export const getBuildingsWithCorrentStaffCountThen = (buildings: Array<GovernmentBuildingsType>, staffCount: number) => {
     return buildings.filter(buildings => buildings.staffCount > staffCount)
 }
+
+
+export const getBuildingsWithStaffCountGreaterThen = (building: GovernmentBuildingsType[], staffCount: number) => {
+    return building.filter(building => building.staffCount > staffCount)
+}
